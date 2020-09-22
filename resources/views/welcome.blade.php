@@ -83,6 +83,14 @@
                 <div class="title m-b-md">
                     Laravel 7
                 </div>
+                <div>
+                    @php
+
+                    echo ini_get('memory_limit');
+
+                        @endphp
+
+                </div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
