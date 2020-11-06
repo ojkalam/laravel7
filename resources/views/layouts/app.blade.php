@@ -12,12 +12,13 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/18.3.0.35/js/web/bootstrap-theme/ej.web.all.min.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/bootstrap4.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.syncfusion.com/ej2/ej2-inputs/styles/bootstrap4.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.syncfusion.com/ej2/ej2-grids/styles/bootstrap4.css" rel="stylesheet" type="text/css"/>
+
 </head>
 <body>
     <div id="app">
@@ -38,6 +39,9 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('linkfinder.index') }}">{{ __('Link Finder') }}</a>
+                        </li>
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">

@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Route::get('/', function () {
+//    return view('index');
+//});
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -20,3 +24,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('/linkfinder', 'LinkFinderController');
+
+//Route::get('link-finder', 'LinkFinderController@index')->name('linkfinder');
+//Route::post('link-finder','LinkFinderController@getCdxResults')->name('finder.getCdxResults');

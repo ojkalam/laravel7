@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1dac1c15297bef49f091f748f4861746",
+    "content-hash": "1903559ef602ca31c233f839b489d2ae",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4285,6 +4285,47 @@
                 "php"
             ],
             "time": "2020-07-22T23:32:04+00:00"
+        },
+        {
+            "name": "vyuldashev/xml-to-array",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vyuldashev/xml-to-array.git",
+                "reference": "ae1713b167093716b8e8d56bfb318befac4a8c4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vyuldashev/xml-to-array/zipball/ae1713b167093716b8e8d56bfb318befac4a8c4b",
+                "reference": "ae1713b167093716b8e8d56bfb318befac4a8c4b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "larapack/dd": "^1.1",
+                "phpunit/phpunit": "^6.4",
+                "spatie/array-to-xml": "^2.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Vyuldashev\\XmlToArray\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vladimir Yuldashev",
+                    "email": "misterio92@gmail.com"
+                }
+            ],
+            "description": "Convert xml to an array",
+            "time": "2018-04-22T15:20:09+00:00"
         }
     ],
     "packages-dev": [
