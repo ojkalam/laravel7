@@ -13951,3 +13951,7 @@ Tipu Custom Css
   background: #c9d9e6;
 }
 
+#notifications.has-notifications {
+  color: #bf5329;
+}
+

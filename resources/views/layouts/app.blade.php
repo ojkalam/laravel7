@@ -14,16 +14,31 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/18.3.0.35/js/web/bootstrap-theme/ej.web.all.min.css" rel="stylesheet" />
+    {{--<link href="https://cdn.syncfusion.com/18.3.0.35/js/web/bootstrap-theme/ej.web.all.min.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/bootstrap4.css" rel="stylesheet" type="text/css"/>
     <link href="https://cdn.syncfusion.com/ej2/ej2-inputs/styles/bootstrap4.css" rel="stylesheet" type="text/css"/>
-    <link href="https://cdn.syncfusion.com/ej2/ej2-grids/styles/bootstrap4.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.syncfusion.com/ej2/ej2-grids/styles/bootstrap4.css" rel="stylesheet" type="text/css"/>--}}
+
+    <script>
+        window.Laravel = <?php echo json_encode([
+            'csrfToken' => csrf_token(),
+        ]); ?>
+    </script>
+
+    <!-- This makes the current user's id available in javascript -->
+    @if(!auth()->guest())
+        <script>
+            window.Laravel.userId = <?php echo auth()->user()->id; ?>
+        </script>
+    @endif
 
 </head>
 <body>
+
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
+
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
@@ -39,6 +54,15 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <span class="glyphicon glyphicon-user">Notifi</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="notificationsMenu" id="notificationsMenu">
+                                <li class="dropdown-header">No notifications</li>
+                            </ul>
+                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('linkfinder.index') }}">{{ __('Link Finder') }}</a>
                         </li>

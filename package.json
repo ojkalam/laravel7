@@ -27,6 +27,8 @@
         "@syncfusion/ej2-data": "^18.3.35",
         "@syncfusion/ej2-vue-grids": "^18.3.35",
         "font-awesome": "^4.7.0",
+        "laravel-echo": "^1.9.0",
+        "pusher-js": "^7.0.1",
         "vue-scroll-loader": "^2.2.0"
     }
 }
