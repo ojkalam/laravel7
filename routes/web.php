@@ -38,6 +38,9 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/notifications', 'UsersController@notifications');
 
+    Route::any('/image-up', 'ImageGalleryController@imageUpload');
+    Route::any('/get-gellery', 'ImageGalleryController@viewUploads');
+
 });
 
 

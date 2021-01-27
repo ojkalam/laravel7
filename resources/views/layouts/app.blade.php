@@ -11,9 +11,11 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/custom.js') }}" defer></script>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     {{--<link href="https://cdn.syncfusion.com/18.3.0.35/js/web/bootstrap-theme/ej.web.all.min.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/bootstrap4.css" rel="stylesheet" type="text/css"/>
     <link href="https://cdn.syncfusion.com/ej2/ej2-inputs/styles/bootstrap4.css" rel="stylesheet" type="text/css"/>
