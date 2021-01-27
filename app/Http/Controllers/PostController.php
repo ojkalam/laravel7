@@ -7,10 +7,12 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-   
-    public function index()
+
+    public function index(Request $request)
     {
-        return Post::orderBy('id', 'DESC')->paginate();
+        $posts = Post::orderBy('id', 'DESC')->paginate(5);
+dd($posts);
+        return view('post.index', compact('posts'));
     }
 
     public function show($slug)

@@ -24,6 +24,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/solr', 'HomeController@solr')->name('solr');
+Route::get('/post', 'PostController@index')->name('solr');
 
 Route::get('/notify', 'HomeController@notificationTest')->name('home');
 

@@ -18,6 +18,7 @@
         "laravel/ui": "^2.4",
         "mongodb/mongodb": "^1.7",
         "pusher/pusher-php-server": "^4.1",
+        "solarium/solarium": "5.*",
         "vyuldashev/xml-to-array": "^1.0"
     },
     "require-dev": {
