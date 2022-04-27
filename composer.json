@@ -16,10 +16,14 @@
         "laravel/framework": "^7.24",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.4",
+        "mobiosolutions/metatags": "dev-master",
         "mongodb/mongodb": "^1.7",
         "pusher/pusher-php-server": "^4.1",
+        "rugaard/meta-scraper": "dev-master",
         "solarium/solarium": "5.*",
-        "vyuldashev/xml-to-array": "^1.0"
+        "spekulatius/phpscraper": "^0.5.0",
+        "vyuldashev/xml-to-array": "^1.0",
+        "yooper/php-text-analysis": "^1.7"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
@@ -31,7 +35,8 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "platform-check": false
     },
     "extra": {
         "laravel": {
