@@ -20,7 +20,9 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 // Vue.component('app', 				require('./components/AppComponent.vue'));
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+// Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('productone', require('./components/Products').default);
+Vue.component('producttwo', require('./components/ProductTwo').default);
 // Vue.component('posts', 				require('./components/PostsComponent.vue').default);
 // Vue.component('infinite', 	require('vue-infinite-loading'));
 /**
@@ -28,9 +30,11 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+import routes from "./routes/index";
 
 const app = new Vue({
     el: '#app',
+    router: routes,
 });
 
 
